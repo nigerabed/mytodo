@@ -1,10 +1,10 @@
 // setup
 let todoList = [];
 
-// todoList.push("Pay El Bill");
-// todoList.push("Contact for dantist insurance");
-// todoList.push("Kids vaccine");
-// todoList.push("Buy Nigers winter jakket ;) ");
+todoList.push("Pay El Bill");
+todoList.push("Contact for dantist insurance");
+todoList.push("Kids vaccine");
+todoList.push("Buy Nigers winter jakket ;) ");
 
 // using loop
 for (let i = 0; i < todoList.length; i++) {
@@ -12,7 +12,6 @@ for (let i = 0; i < todoList.length; i++) {
 }
 
 //using function
-
 function addTasktoListBox(todo) {
   //connect with HTML ul element
   let listBox = document.getElementById("listBox");
@@ -23,12 +22,4 @@ function addTasktoListBox(todo) {
 
   // add the li element as a child to the ul element
   listBox.appendChild(taskLi);
-}
-
-function addTask() {
-  let newTask = document.getElementById("taskInput").value;
-
-  console.log(newTask);
-
-  addTasktoListBox(newTask);
 }
